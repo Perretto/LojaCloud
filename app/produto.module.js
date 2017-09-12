@@ -6,14 +6,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 const core_1 = require("@angular/core");
-let AppComponent = class AppComponent {
+const common_1 = require("@angular/common");
+const forms_1 = require("@angular/forms");
+const produto_lista_component_1 = require("./produto-lista.component");
+let ProdutoModule = class ProdutoModule {
 };
-AppComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'lojacloud-app',
-        templateUrl: 'pedido-venda.html'
+ProdutoModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            common_1.CommonModule,
+            forms_1.FormsModule
+        ],
+        declarations: [
+            produto_lista_component_1.ProdutoListaComponent
+        ],
+        exports: [
+            produto_lista_component_1.ProdutoListaComponent
+        ]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ProdutoModule);
+exports.ProdutoModule = ProdutoModule;
+//# sourceMappingURL=produto.module.js.map

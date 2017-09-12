@@ -6,14 +6,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 const core_1 = require("@angular/core");
-let AppComponent = class AppComponent {
+let ProdutoListaComponent = class ProdutoListaComponent {
 };
-AppComponent = __decorate([
+ProdutoListaComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        selector: 'lojacloud-app',
-        templateUrl: 'pedido-venda.html'
+        selector: 'produtos-lista',
+        templateUrl: 'produto-lista.component.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], ProdutoListaComponent);
+exports.ProdutoListaComponent = ProdutoListaComponent;
+//# sourceMappingURL=produto-lista.component.js.map
