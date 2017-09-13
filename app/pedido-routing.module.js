@@ -6,14 +6,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 const core_1 = require("@angular/core");
-let AppComponent = class AppComponent {
+const router_1 = require("@angular/router");
+const pedido_lista_venda_component_1 = require("./pedido-lista-venda.component");
+const pedidoRoutes = [
+    {
+        path: 'pedido',
+        component: pedido_lista_venda_component_1.PedidoListaComponent
+    },
+];
+let PedidoRoutingModule = class PedidoRoutingModule {
 };
-AppComponent = __decorate([
-    core_1.Component({
-        moduleId: module.id,
-        selector: 'lojacloud-app',
-        templateUrl: 'app.component.html'
+PedidoRoutingModule = __decorate([
+    core_1.NgModule({
+        imports: [
+            router_1.RouterModule.forChild(pedidoRoutes)
+        ],
+        exports: [router_1.RouterModule]
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], PedidoRoutingModule);
+exports.PedidoRoutingModule = PedidoRoutingModule;
+//# sourceMappingURL=pedido-routing.module.js.map

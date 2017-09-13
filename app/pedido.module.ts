@@ -1,18 +1,21 @@
 import {NgModule} from '@angular/core'
 import {CommonModule} from '@angular/common'
 import {FormsModule} from '@angular/forms'
-import {ProdutoListaComponent} from './produto-lista.component';
+
+import {PedidoListaComponent} from './pedido-lista-venda.component';
+import { PedidoRoutingModule } from './pedido-routing.module';
 
 @NgModule({
     imports: [
         CommonModule,
+        PedidoRoutingModule,
         FormsModule
     ],
     declarations: [
-        ProdutoListaComponent
+        PedidoListaComponent
     ],
     exports: [
-        ProdutoListaComponent
+        PedidoListaComponent
     ]
 })
 export class ProdutoModule{}

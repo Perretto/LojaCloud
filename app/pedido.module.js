@@ -8,7 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 const core_1 = require("@angular/core");
 const common_1 = require("@angular/common");
 const forms_1 = require("@angular/forms");
-const produto_lista_component_1 = require("./produto-lista.component");
+const pedido_lista_venda_component_1 = require("./pedido-lista-venda.component");
 const pedido_routing_module_1 = require("./pedido-routing.module");
 let ProdutoModule = class ProdutoModule {
 };
@@ -20,12 +20,12 @@ ProdutoModule = __decorate([
             forms_1.FormsModule
         ],
         declarations: [
-            produto_lista_component_1.ProdutoListaComponent
+            pedido_lista_venda_component_1.PedidoListaComponent
         ],
         exports: [
-            produto_lista_component_1.ProdutoListaComponent
+            pedido_lista_venda_component_1.PedidoListaComponent
         ]
     })
 ], ProdutoModule);
 exports.ProdutoModule = ProdutoModule;
-//# sourceMappingURL=produto.module.js.map
+//# sourceMappingURL=pedido.module.js.map

@@ -7,12 +7,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 const core_1 = require("@angular/core");
 const platform_browser_1 = require("@angular/platform-browser");
+const http_1 = require("@angular/http");
 const app_component_1 = require("./app.component");
+const app_routing_module_1 = require("./app-routing.module");
+const pedido_module_1 = require("./pedido.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule],
+        imports: [
+            app_routing_module_1.AppRoutingModule,
+            platform_browser_1.BrowserModule,
+            http_1.HttpModule,
+            pedido_module_1.ProdutoModule
+        ],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
     })

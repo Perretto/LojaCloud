@@ -3,6 +3,9 @@ import { Component } from '@angular/core';
 @Component ({
     moduleId: module.id,
     selector: 'lojacloud-app',
-    templateUrl: 'pedido-venda.html'
+    templateUrl: 'app.component.html'
+    //templateUrl: 'pedido-lista-venda.html'
 })
-export class AppComponent {}
+export class AppComponent {
+    
+}
