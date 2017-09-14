@@ -11,6 +11,7 @@ const http_1 = require("@angular/http");
 const app_component_1 = require("./app.component");
 const app_routing_module_1 = require("./app-routing.module");
 const pedido_module_1 = require("./pedido.module");
+const pagamento_module_1 = require("./pagamento.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -19,7 +20,8 @@ AppModule = __decorate([
             app_routing_module_1.AppRoutingModule,
             platform_browser_1.BrowserModule,
             http_1.HttpModule,
-            pedido_module_1.ProdutoModule
+            pedido_module_1.ProdutoModule,
+            pagamento_module_1.PagamentoModule
         ],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]

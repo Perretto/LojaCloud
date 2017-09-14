@@ -5,8 +5,9 @@
                 <input class="col-md-9" placeholder="Pesquisa" type="text" />
                 <button class="col-md-3" style="font-weight: bold" class="btn btn-success" >F10 <i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
-            <div>
-                <input  class="col-md-12"  placeholder="Código de barras" type="text" />
+            <div style="display: flex;">
+                <input  class="col-md-9" id="codbar" placeholder="Código de barras" type="text" />
+                <input  style="margin-left: 1%; text-align: center" (blur)="lostFocusQtde()" class="col-md-3" id="txtqtde" placeholder="Qtde" type="text" />
             </div>
         </form>
 
@@ -83,9 +84,9 @@
 
         <div class="col-md-12">
             <div class="col-md-2"></div>
-            <button class="btn btn-primary col-md-2" style="font-weight: bold" title="Quantidade">F2 <i class="fa fa-bars"></i></button>
-            <button class="btn btn-success col-md-2" style="font-weight: bold" title="Pagamento">F3 <i class="fa fa-money"></i></button>
+            <button class="btn btn-primary col-md-2" id="qtde" (click)="onfocusQtde()" style="font-weight: bold" title="Quantidade">F2 <i class="fa fa-bars"></i></button>
             <button class="btn btn-info col-md-2" style="font-weight: bold" title="Clientes">F4 <i class="fa fa-user-circle" aria-hidden="true"></i></button>
+            <button class="btn btn-success col-md-2" id="pagto" [routerLink]="['/pedido/pagto']" style="font-weight: bold" title="Pagamento">F7 <i class="fa fa-money"></i></button>
             <button class="btn btn-danger col-md-2" style="font-weight: bold" title="Cancelar venda">F8 <i class="fa fa-ban"></i></button>
             <button class="btn btn-warning col-md-2" style="font-weight: bold" title="Sangria/Suprimento">F9 <i class="fa fa-refresh"></i></button>
  
@@ -157,11 +158,7 @@
                         <h6 class="card-title" style="text-align: -webkit-center;">Mouse Optico com fio</h6>
                     </div>                    
                 </div>
-            
         </div>
     </div>
 
-    
-
 </div>
-

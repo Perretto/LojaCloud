@@ -6,13 +6,16 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ProdutoModule } from './pedido.module';
+import { PagamentoModule } from './pagamento.module';
+
 
 @NgModule({ 
     imports: [
         AppRoutingModule,
         BrowserModule,
         HttpModule,
-        ProdutoModule
+        ProdutoModule,
+        PagamentoModule
     ],
     declarations:[AppComponent],
     bootstrap: [AppComponent]

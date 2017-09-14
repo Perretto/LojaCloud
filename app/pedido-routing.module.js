@@ -8,10 +8,15 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 const core_1 = require("@angular/core");
 const router_1 = require("@angular/router");
 const pedido_lista_venda_component_1 = require("./pedido-lista-venda.component");
+const pagamento_venda_component_1 = require("./pagamento-venda.component");
 const pedidoRoutes = [
     {
         path: 'pedido',
         component: pedido_lista_venda_component_1.PedidoListaComponent
+    },
+    {
+        path: 'pedido/pagto',
+        component: pagamento_venda_component_1.PagamentoVendaComponent
     },
 ];
 let PedidoRoutingModule = class PedidoRoutingModule {

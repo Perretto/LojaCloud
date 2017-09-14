@@ -1,0 +1,50 @@
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+<div class="col-md-12" style="background: #e4dfdf; display: -webkit-box;">
+    <div class="col-md-4" style=" padding:2%;">
+        <select class="browser-default" id="cboFormas" style="font-size: 200%; height: auto; width: auto;">
+            <option value="" disabled selected>Selecione a Forma de Pagamento</option>
+            <option value="01">01-DINHEIRO</option>
+            <option value="02">02-CHEQUE</option>
+            <option value="03">03-CARTÃO DE CRÉDITO</option>
+            <option value="04">04-CARTÃO DE DÉBITO</option>
+            <option value="05">05-CREDITO LOJA</option>
+            <option value="10">10-VALE ALIMENTACAO</option>
+            <option value="11">11-VALE REFEICAO</option>
+            <option value="12">12-VALE PRESENTE</option>
+            <option value="13">13-VALE COMBUSTIVEL</option>
+            <option value="99">99-OUTROS</option>
+        </select>
+        <h4>Total Venda: 3.520,00</h4>
+        
+        <div class="input-field col s6">
+            <input id="valpg" type="text" style="text-align: -webkit-right; font-size: xx-large;" class="validate">
+            <label for="vPago">R$ Pago</label>
+        </div>
+        <h4 style="color: red;">Troco: 0,00</h4>
+    </div>
+    <div class="col-md-7" style="margin-left: 4%; margin-top: 2%">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th><i class="fa fa-trash"></i></th>
+                    <th>Forma Pagamento</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="fa fa-trash"></i></td>
+                    <td>01-DINHEIRO</td>
+                    <td>3.520,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="col-md-6">
+    <div class="col-md-2"></div>
+    <button class="btn btn-secondary col-md-2" id="voltarpg" [routerLink]="['/']" style="font-weight: bold" title="Volta tela">F9 <i class="fa fa-money"></i></button>
+</div>

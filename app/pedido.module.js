@@ -9,6 +9,7 @@ const core_1 = require("@angular/core");
 const common_1 = require("@angular/common");
 const forms_1 = require("@angular/forms");
 const pedido_lista_venda_component_1 = require("./pedido-lista-venda.component");
+const pagamento_venda_component_1 = require("./pagamento-venda.component");
 const pedido_routing_module_1 = require("./pedido-routing.module");
 let ProdutoModule = class ProdutoModule {
 };
@@ -20,10 +21,12 @@ ProdutoModule = __decorate([
             forms_1.FormsModule
         ],
         declarations: [
-            pedido_lista_venda_component_1.PedidoListaComponent
+            pedido_lista_venda_component_1.PedidoListaComponent,
+            pagamento_venda_component_1.PagamentoVendaComponent
         ],
         exports: [
-            pedido_lista_venda_component_1.PedidoListaComponent
+            pedido_lista_venda_component_1.PedidoListaComponent,
+            pagamento_venda_component_1.PagamentoVendaComponent
         ]
     })
 ], ProdutoModule);
