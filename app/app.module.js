@@ -10,6 +10,7 @@ const platform_browser_1 = require("@angular/platform-browser");
 const http_1 = require("@angular/http");
 const app_component_1 = require("./app.component");
 const app_routing_module_1 = require("./app-routing.module");
+const menu_fiscal_module_1 = require("./menu-fiscal.module");
 const pedido_module_1 = require("./pedido.module");
 const pagamento_module_1 = require("./pagamento.module");
 let AppModule = class AppModule {
@@ -20,6 +21,7 @@ AppModule = __decorate([
             app_routing_module_1.AppRoutingModule,
             platform_browser_1.BrowserModule,
             http_1.HttpModule,
+            menu_fiscal_module_1.MenuFiscalModule,
             pedido_module_1.ProdutoModule,
             pagamento_module_1.PagamentoModule
         ],

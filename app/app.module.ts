@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
+import { MenuFiscalModule } from './menu-fiscal.module'
 import { ProdutoModule } from './pedido.module';
 import { PagamentoModule } from './pagamento.module';
 
@@ -14,6 +15,8 @@ import { PagamentoModule } from './pagamento.module';
         AppRoutingModule,
         BrowserModule,
         HttpModule,
+        
+        MenuFiscalModule,
         ProdutoModule,
         PagamentoModule
     ],

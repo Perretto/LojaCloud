@@ -10,22 +10,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const core_2 = require("@angular/core");
-let PedidoListaComponent = class PedidoListaComponent {
+let MenuFiscalComponent = class MenuFiscalComponent {
     ngOnInit() {
     }
-    onfocusQtde() {
-        document.getElementById("txtqtde").focus();
-    }
-    //Esta dando problema no angular por causa do value
-    //lostFocusQtde(): void{
-    //    document.getElementById("txtqtde").value = "1,000";
-    //}
     keyboardInput(event) {
-        if (event.keyCode == 113) {
-            document.getElementById("txtqtde").focus();
-        }
-        if (event.keyCode == 118) {
-            document.getElementById("pagto").click();
+        if (event.keyCode == 120) {
+            document.getElementById("voltarpg").click();
         }
     }
 };
@@ -34,14 +24,13 @@ __decorate([
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [KeyboardEvent]),
     __metadata("design:returntype", void 0)
-], PedidoListaComponent.prototype, "keyboardInput", null);
-PedidoListaComponent = __decorate([
+], MenuFiscalComponent.prototype, "keyboardInput", null);
+MenuFiscalComponent = __decorate([
     core_1.Component({
         moduleId: module.id,
-        //selector: 'pedido-venda-app',
-        selector: 'pedido-lista',
-        templateUrl: 'pedido-lista-venda.component.html'
+        selector: 'menu-fiscal',
+        templateUrl: 'menu-fiscal.component.html'
     })
-], PedidoListaComponent);
-exports.PedidoListaComponent = PedidoListaComponent;
-//# sourceMappingURL=pedido-lista-venda.component.js.map
+], MenuFiscalComponent);
+exports.MenuFiscalComponent = MenuFiscalComponent;
+//# sourceMappingURL=menu-fiscal.component.js.map

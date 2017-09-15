@@ -17,10 +17,10 @@ export class PedidoListaComponent implements OnInit {
     onfocusQtde(): void {
         document.getElementById("txtqtde").focus();
         }
-
-    lostFocusQtde(): void{
-        document.getElementById("txtqtde").value = "1,000";
-    }
+    //Esta dando problema no angular por causa do value
+    //lostFocusQtde(): void{
+    //    document.getElementById("txtqtde").value = "1,000";
+    //}
 
     @HostListener('window:keydown', ['$event'])
     keyboardInput(event: KeyboardEvent) {
