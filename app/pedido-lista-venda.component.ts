@@ -21,7 +21,7 @@ export class PedidoListaComponent implements OnInit {
     //lostFocusQtde(): void{
     //    document.getElementById("txtqtde").value = "1,000";
     //}
-
+    
     @HostListener('window:keydown', ['$event'])
     keyboardInput(event: KeyboardEvent) {
         if(event.keyCode == 113){
