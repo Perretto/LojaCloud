@@ -13,6 +13,13 @@ const core_2 = require("@angular/core");
 let MenuFiscalComponent = class MenuFiscalComponent {
     ngOnInit() {
     }
+    disableTextBox() {
+        //document.getElementById(chvcfe).disabled=true;
+        var obj = document.getElementById('cboFormas');
+        if (obj.nodeValue = '01-CONSULTAR STATUS OPERACIONAL') {
+            alert('');
+        }
+    }
     keyboardInput(event) {
         if (event.keyCode == 120) {
             document.getElementById("voltarpg").click();

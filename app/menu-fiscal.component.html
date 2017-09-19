@@ -4,7 +4,7 @@
     <div class="col-md-6" style=" padding:2%;">
         <select class="browser-default" id="cboFormas" style="font-size: 200%; height: auto; width: auto;">
             <option value="" disabled selected>Selecione uma opção</option>
-            <option value="01">01-CONSULTAR STATUS OPERACIONAL</option>
+            <option (change)="disableTextBox()" value="01">01-CONSULTAR STATUS OPERACIONAL</option>
             <option value="02">02-CANCELAR CFe</option>
             <option value="03">03-EXTRAIR LOG</option>
             <option value="04">04-REIMPRIMIR CFe</option>
@@ -44,3 +44,10 @@
     <div class="col-md-2"></div>
     <button class="btn btn-secondary col-md-2" id="voltarpg" [routerLink]="['/']" style="font-weight: bold" title="Volta tela">F9 <i class="fa fa-money"></i></button>
 </div>
+
+<script>
+    function enable_text(strTxt)
+        {
+            
+        }
+</script>

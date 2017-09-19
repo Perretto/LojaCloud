@@ -14,6 +14,17 @@ export class MenuFiscalComponent implements OnInit {
 
     }
 
+    disableTextBox(): void {
+        //document.getElementById(chvcfe).disabled=true;
+        var obj = document.getElementById('cboFormas');
+        if(obj.nodeValue = '01-CONSULTAR STATUS OPERACIONAL') {
+            alert('')
+        }
+    }
+    
+
+    
+
     @HostListener('window:keydown', ['$event'])
     keyboardInput(event: KeyboardEvent) {
         if(event.keyCode == 120){
