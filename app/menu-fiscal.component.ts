@@ -13,7 +13,7 @@ export class MenuFiscalComponent implements OnInit {
     ngOnInit(): void {
 
     }
-
+    
     disableTextBox(): void {
         //document.getElementById(chvcfe).disabled=true;
         var obj = document.getElementById('cboFormas');
@@ -21,9 +21,6 @@ export class MenuFiscalComponent implements OnInit {
             alert('')
         }
     }
-    
-
-    
 
     @HostListener('window:keydown', ['$event'])
     keyboardInput(event: KeyboardEvent) {
