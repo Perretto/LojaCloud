@@ -1,0 +1,26 @@
+h1 {
+    color: #F50808;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+  }
+  h2, h3 {
+    padding: 5%;
+    color: #FD0000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+  }
+  body {
+    margin: 2em;
+  }
+  #headerTop{
+    color: #FD0000;
+    background: #FD0000;
+    background-color: blue;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+  

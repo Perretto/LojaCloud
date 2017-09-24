@@ -14,7 +14,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link id="stylecss" rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- 1. Load libraries -->
@@ -36,7 +36,27 @@
   
   <!-- 3. Display the application -->
   <body>
+    <div id="divbuttontemplate">
+        <button class="btn btn-success" id="botaotemplate1">Template 1</button>
+        <button  class="btn btn-info" id="botaotemplate2">Template 2</button>
+    </div>
+      
     <lojacloud-app>Loading...</lojacloud-app>
   </body>
   
+  <script>
+
+    
+     $("#botaotemplate1").click(function() {
+      $("#stylecustom").remove();
+      $("head").append('<link id="stylecss" rel="stylesheet" href="/styles.css">'); 
+    });
+
+    $("#botaotemplate2").click(function() {
+      $("#stylecss").remove();
+      $("head").append('<link id="stylecustom" rel="stylesheet" href="/stylescss/custom1.css">'); 
+    });
+
+    
+  </script>
 </html>
