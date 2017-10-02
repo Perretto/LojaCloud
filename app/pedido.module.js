@@ -8,6 +8,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 const core_1 = require("@angular/core");
 const common_1 = require("@angular/common");
 const forms_1 = require("@angular/forms");
+const fecha_caixa_component_1 = require("./fecha-caixa.component");
 const menu_fiscal_component_1 = require("./menu-fiscal.component");
 const pedido_lista_venda_component_1 = require("./pedido-lista-venda.component");
 const pagamento_venda_component_1 = require("./pagamento-venda.component");
@@ -22,11 +23,13 @@ ProdutoModule = __decorate([
             forms_1.FormsModule
         ],
         declarations: [
+            fecha_caixa_component_1.FechaCaixaComponent,
             menu_fiscal_component_1.MenuFiscalComponent,
             pedido_lista_venda_component_1.PedidoListaComponent,
             pagamento_venda_component_1.PagamentoVendaComponent
         ],
         exports: [
+            fecha_caixa_component_1.FechaCaixaComponent,
             menu_fiscal_component_1.MenuFiscalComponent,
             pedido_lista_venda_component_1.PedidoListaComponent,
             pagamento_venda_component_1.PagamentoVendaComponent
