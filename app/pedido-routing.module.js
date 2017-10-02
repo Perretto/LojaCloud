@@ -7,6 +7,7 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 const core_1 = require("@angular/core");
 const router_1 = require("@angular/router");
+const clientes_lista_component_1 = require("./clientes-lista.component");
 const fecha_caixa_component_1 = require("./fecha-caixa.component");
 const menu_fiscal_component_1 = require("./menu-fiscal.component");
 const pedido_lista_venda_component_1 = require("./pedido-lista-venda.component");
@@ -28,6 +29,10 @@ const pedidoRoutes = [
         path: 'pedido/fechacaixa',
         component: fecha_caixa_component_1.FechaCaixaComponent
     },
+    {
+        path: 'pedido/clientes',
+        component: clientes_lista_component_1.ClientesListaComponent
+    }
 ];
 let PedidoRoutingModule = class PedidoRoutingModule {
 };

@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { FechaCaixaComponent } from './fecha-caixa.component'
-import { MenuFiscalComponent } from './menu-fiscal.component'
-import { PedidoListaComponent } from './pedido-lista-venda.component'
-import { PagamentoVendaComponent } from './pagamento-venda.component'
+import { ClientesListaComponent } from './clientes-lista.component';
+import { FechaCaixaComponent } from './fecha-caixa.component';
+import { MenuFiscalComponent } from './menu-fiscal.component';
+import { PedidoListaComponent } from './pedido-lista-venda.component';
+import { PagamentoVendaComponent } from './pagamento-venda.component';
 
 const pedidoRoutes: Routes = [
     {
@@ -27,6 +28,10 @@ const pedidoRoutes: Routes = [
         component: FechaCaixaComponent
     },
 
+    {
+        path: 'pedido/clientes',
+        component: ClientesListaComponent
+    }
 ];
 
 @NgModule({
