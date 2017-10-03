@@ -9,16 +9,18 @@ const produtosLista = new mongoose.Schema ({
     cfop: { type: String, required: true },    
     ncm: { type: String, required: true },
     
-    cstIcms: { type: Number, required: true },
+    cstIcms: { type: String, required: true },
     valorIcms: { type: Number, min: 0, required: true },
     
-    cstIpi: { type: Number, required: true },
+    cstIpi: { type: String, required: true },
     valorIpi: { type: Number, min: 0, required: true },
 
-    cstPis: { type: Number, required: true },
+    cstPis: { type: String, required: true },
     valorPis: { type: Number, min: 0, required: true },
 
-    cstCofins: { type: Number, required: true },
+    cstCofins: { type: String, required: true },
     valorCofins: { type: Number, min:0, required: true },
 
 })
+
+module.exports = restful.model('produtos', produtosLista)
