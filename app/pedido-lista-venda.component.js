@@ -12,13 +12,27 @@ const core_1 = require("@angular/core");
 const core_2 = require("@angular/core");
 let PedidoListaComponent = class PedidoListaComponent {
     ngOnInit() {
+        document.getElementById('txtqtde').value = '1,000';
     }
     onfocusQtde() {
         document.getElementById("txtqtde").focus();
     }
     //Esta dando problema no angular por causa do value
     lostFocusQtde() {
-        document.getElementById('txtqtde').value = '1,000';
+        if (document.getElementById('txtqtde').value == "") {
+            document.getElementById('txtqtde').value = '1,000';
+        }
+    }
+    onchangeQtde() {
+        if (document.getElementById('txtqtde').value == "") {
+            document.getElementById('txtqtde').value = '1,000';
+        }
+    }
+    isNumericQtde() {
+        var numero = Number(document.getElementById('txtqtde').value);
+        if (isNaN(numero)) {
+            document.getElementById('txtqtde').value = '1,000';
+        }
     }
     keyboardInput(event) {
         if (event.keyCode == 113) {

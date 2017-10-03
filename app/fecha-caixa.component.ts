@@ -11,4 +11,12 @@ export class FechaCaixaComponent {
     ngOnInit(): void {
         
     }
+
+    @HostListener('window:keydown', ['$event'])
+    keyboardInput(event: KeyboardEvent) {
+        if(event.keyCode == 120){
+            document.getElementById("voltarpg").click();
+        }
+    }
+
 }

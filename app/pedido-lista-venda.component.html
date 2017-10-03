@@ -7,7 +7,7 @@
             </div>
             <div style="display: flex;">
                 <input  class="col-md-9" id="codbar" placeholder="Código de barras" type="text" />
-                <input  style="margin-left: 1%; text-align: center" (blur)="lostFocusQtde()" class="col-md-3" id="txtqtde" placeholder="Qtde" type="text" />
+                <input  style="margin-left: 1%; text-align: center" (blur)="lostFocusQtde()" (keyup)="isNumericQtde()" class="col-md-3" id="txtqtde" placeholder="Qtde" type="text" />
             </div>
         </form>
 
