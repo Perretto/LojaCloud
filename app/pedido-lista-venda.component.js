@@ -17,9 +17,9 @@ let PedidoListaComponent = class PedidoListaComponent {
         document.getElementById("txtqtde").focus();
     }
     //Esta dando problema no angular por causa do value
-    //lostFocusQtde(): void{
-    //    document.getElementById("txtqtde").value = "1,000";
-    //}
+    lostFocusQtde() {
+        document.getElementById('txtqtde').value = '1,000';
+    }
     keyboardInput(event) {
         if (event.keyCode == 113) {
             document.getElementById("txtqtde").focus();
