@@ -19,7 +19,7 @@ const produtosLista = new mongoose.Schema ({
     valorPis: { type: Number, min: 0, required: true },
 
     cstCofins: { type: String, required: true },
-    valorCofins: { type: Number, min:0, required: true },
+    valorCofins: { type: Number, min:0, required: true }    
 
 })
 

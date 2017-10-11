@@ -32,6 +32,7 @@ const pedidoRoutes: Routes = [
         path: 'pedido/clientes',
         component: ClientesListaComponent
     }
+    
 ];
 
 @NgModule({

@@ -6,6 +6,8 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     
+    <!--<script src ="angular-locale.min.js"> </script> -->
+
     <title>Empresario Loja Cloud</title>
 
     <!-- Required meta tags -->
@@ -17,6 +19,9 @@
     <link id="stylecss" rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script src="node_modules/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-sweetalert/dist/sweetalert.css">
+
     <!-- 1. Load libraries -->
     <!-- Polyfill(s) for older browsers -->
     <script src="node_modules/core-js/client/shim.min.js"></script>
@@ -25,7 +30,8 @@
     <script src="node_modules/systemjs/dist/system.src.js"></script>
 
     <script src="scripts/jquery.mask.min.js"></script>
-  
+    <script src="scripts/notify.js"></script>
+
     <!-- 2. Configure SystemJS -->
     <script src="systemjs.config.js"></script>
     <script>
@@ -57,6 +63,9 @@
       $("head").append('<link id="stylecustom" rel="stylesheet" href="/stylescss/custom1.css">'); 
     });
 
-    
+    //$(document).ready(function() {
+    //    $('#txtqtde').mask('000.000.000.000.000,00', {reverse: true});
+    //});
+ 
   </script>
 </html>

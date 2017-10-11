@@ -9,7 +9,7 @@ import { ClientesListaModule } from './clientes-lista.module';
 import { FechaCaixaModule } from './fecha-caixa.module';
 import { MenuFiscalModule } from './menu-fiscal.module';
 import { PagamentoModule } from './pagamento.module';
-import { PedidoModule } from './pedido.module';
+import { PedidoModule } from './pedido-lista-venda.module';
 
 
 @NgModule({ 

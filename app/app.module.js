@@ -14,7 +14,7 @@ const clientes_lista_module_1 = require("./clientes-lista.module");
 const fecha_caixa_module_1 = require("./fecha-caixa.module");
 const menu_fiscal_module_1 = require("./menu-fiscal.module");
 const pagamento_module_1 = require("./pagamento.module");
-const pedido_module_1 = require("./pedido.module");
+const pedido_lista_venda_module_1 = require("./pedido-lista-venda.module");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
@@ -27,7 +27,7 @@ AppModule = __decorate([
             fecha_caixa_module_1.FechaCaixaModule,
             menu_fiscal_module_1.MenuFiscalModule,
             pagamento_module_1.PagamentoModule,
-            pedido_module_1.PedidoModule
+            pedido_lista_venda_module_1.PedidoModule
         ],
         declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
