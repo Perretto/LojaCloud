@@ -6,6 +6,7 @@ import { Http, Headers, Response, RequestOptions } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 var proximoitem = 0;
+var TotalFecVenda = "0";
 
 @Component({
     moduleId: module.id,
@@ -24,6 +25,7 @@ export class PedidoListaComponent implements OnInit {
     ngOnInit(): void {
         document.getElementById("codbar").focus();
         (<HTMLInputElement>document.getElementById('txtqtde')).value = '1,000';
+        
     }
 
     onfocusQtde(): void {
@@ -75,6 +77,14 @@ export class PedidoListaComponent implements OnInit {
         }
     }
 
+    fechaVenda(): void {
+        TotalFecVenda = document.getElementById("lblTotal").innerHTML;
+        alert(TotalFecVenda);
+        
+        $("#tVenda").val() == TotalFecVenda.toString();
+    }
+    
+
     isNumericQtde(): void {
         var numero = Number((<HTMLInputElement>document.getElementById('txtqtde')).value);
         if(isNaN(numero)){
@@ -83,7 +93,7 @@ export class PedidoListaComponent implements OnInit {
     }
 
     gravaProdutoTeste(): void {
-        alert('');
+        
         var strProdJS = "{idProd: 10 descricao: Produto de Teste10 valor: 10.99 unidadeMedida: UN cfop: 5405 ncm: 12345678 cstIcms: 102 valorIcms: 0.10 cstIpi: 01 valorIpi: 0.00 cstPis: 01 valorPis: 0.29 cstCofins: 03 valorCofins: 0.35}";
         let body = strProdJS;
         let headers = new Headers({'Content-Type': 'application/json'});
@@ -154,7 +164,7 @@ export class PedidoListaComponent implements OnInit {
                             document.getElementById("codbar").focus();
                             });	
                         } else {
-                            swal("Cancelado", "Your imaginary file is safe :)", "error");
+                            swal("Cancelado", "Cancelado pelo usuário :)", "error");
                         }
                         });
                         
@@ -164,9 +174,9 @@ export class PedidoListaComponent implements OnInit {
                         
                       
                     }
-                
+                    
                         
-                   
+                    
                 document.getElementById("itens").innerHTML = proximoitem.toString();
                 document.getElementById("lblTotal").innerHTML = tTotalVenda.toFixed(2);
                 $("#codbar").val('');
