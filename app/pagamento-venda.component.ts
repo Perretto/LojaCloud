@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HostListener} from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
     moduleId: module.id,
@@ -8,8 +9,13 @@ import {HostListener} from '@angular/core';
 })
 
 export class PagamentoVendaComponent implements OnInit {
+    constructor(
+        private route: ActivatedRoute,
+        private router: Router) {}
+
     ngOnInit(): void {
-        
+        var valor = this.route.snapshot.queryParams['valor']
+        $("#tVenda").html(valor)
     }
     
     @HostListener('window:keydown', ['$event'])

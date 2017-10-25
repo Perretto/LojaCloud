@@ -10,8 +10,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 const core_1 = require("@angular/core");
 const core_2 = require("@angular/core");
+const router_1 = require("@angular/router");
 let PagamentoVendaComponent = class PagamentoVendaComponent {
+    constructor(route, router) {
+        this.route = route;
+        this.router = router;
+    }
     ngOnInit() {
+        var valor = this.route.snapshot.queryParams['valor'];
+        $("#tVenda").html(valor);
     }
     keyboardInput(event) {
         if (event.keyCode == 120) {
@@ -30,7 +37,9 @@ PagamentoVendaComponent = __decorate([
         moduleId: module.id,
         selector: 'pagamento-venda',
         templateUrl: 'pagamento-venda.component.html'
-    })
+    }),
+    __metadata("design:paramtypes", [router_1.ActivatedRoute,
+        router_1.Router])
 ], PagamentoVendaComponent);
 exports.PagamentoVendaComponent = PagamentoVendaComponent;
 //# sourceMappingURL=pagamento-venda.component.js.map

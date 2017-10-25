@@ -65,8 +65,8 @@ let PedidoListaComponent = class PedidoListaComponent {
     }
     fechaVenda() {
         TotalFecVenda = document.getElementById("lblTotal").innerHTML;
-        alert(TotalFecVenda);
-        $("#tVenda").val() == TotalFecVenda.toString();
+        var url = "/pedido/pagto?valor=" + TotalFecVenda;
+        window.location.assign(url);
     }
     isNumericQtde() {
         var numero = Number(document.getElementById('txtqtde').value);

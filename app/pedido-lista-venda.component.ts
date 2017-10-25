@@ -79,9 +79,8 @@ export class PedidoListaComponent implements OnInit {
 
     fechaVenda(): void {
         TotalFecVenda = document.getElementById("lblTotal").innerHTML;
-        alert(TotalFecVenda);
-        
-        $("#tVenda").val() == TotalFecVenda.toString();
+        var url = "/pedido/pagto?valor=" + TotalFecVenda
+        window.location.assign(url)
     }
     
 
